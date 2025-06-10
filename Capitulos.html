@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>It´s Saturday - Capítulos</title>
+
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="css/Style.css" />
+</head>
+<body>
+  <body class="page-with-background">
+  <!-- Navbar placeholder -->
+  <div id="navbar-placeholder"></div>
+
+  <!-- Contenido principal -->
+  <main class="container py-5">
+    <h1 class="text-center mb-4 capitulo-title">Capítulos</h1>
+    <p class="text-center mb-5 text-light">
+      Selecciona un capítulo para verlo.
+    </p>
+
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+
+      <!-- Tarjeta capítulo 1 -->
+      <div class="col">
+        <div class="card capitulo-card h-100" onclick="location.href='CapituloPiloto.html'">
+          <img src="Resources/Capitulos/PILOTO.png" class="card-img-top" alt="Piloto" />
+          <div class="card-body">
+            <h5 class="card-title">PILOTO "Fiesta en Pine Woods"</h5>
+            <p class="card-text">Episodio piloto</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Más capítulos acá -->
+
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 It´s Saturday Universe - Jesús Alejandro Aguilar Sánchez
+  </footer>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Script para cargar navbar -->
+  <script>
+    fetch('navbar.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('navbar-placeholder').innerHTML = data;
+      })
+      .catch(err => console.error('Error cargando navbar:', err));
+  </script>
+</body>
+</html>

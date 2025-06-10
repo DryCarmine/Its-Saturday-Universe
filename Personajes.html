@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>It´s Saturday - Personajes</title>
+
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="css/Style.css" />
+</head>
+<body>
+  <!-- Navbar placeholder -->
+  <div id="navbar-placeholder"></div>
+
+  <body class="page-with-background">
+
+  <!-- Contenido principal -->
+  <main class="container py-5">
+    <h1 class="text-center mb-4 capitulo-title">Personajes</h1>
+    <p class="text-center mb-5 text-light">
+      Conoce a los protagonistas, sus historias y relaciones dentro del Universo It´s Saturday.
+    </p>
+
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+      
+      <!-- Jenna -->
+      <div class="col">
+  <div class="card personaje-card h-100" onclick="location.href='Jenna.html'">
+    <!-- Imagen PNG por defecto -->
+    <img
+      src="Resources/Personajes/Jenna Miller.png"
+      class="card-img-top png-img"
+      alt="Jenna Miller"
+    />
+    <!-- GIF que aparece al hacer hover -->
+    <img
+      src="Resources/Personajes/JennaGif.gif"
+      class="card-img-top gif-img"
+      alt="Jenna Miller animada"
+    />
+
+    <div class="card-body">
+      <h5 class="card-title">Jenna Miller</h5>
+      <p class="card-text">
+        Punk apasionada, difícil de comprender y aún más de soportar. Gemela rebelde.
+      </p>
+    </div>
+  </div>
+</div>
+
+      <!-- Joel -->
+<div class="col">
+  <div class="card personaje-card h-100" onclick="location.href='Joel.html'">
+    <!-- Imagen PNG por defecto -->
+    <img
+      src="Resources/Personajes/Joel Friderovski.png"
+      class="card-img-top png-img"
+      alt="Joel Friderovski"
+    />
+    <!-- GIF que aparece al hacer hover -->
+    <img
+      src="Resources/Personajes/JoelGif.gif"
+      class="card-img-top gif-img"
+      alt="Joel Friderovski animado"
+    />
+    <div class="card-body">
+      <h5 class="card-title">Joel Friderovski</h5>
+      <p class="card-text">
+        De naturaleza amable, leal, torpe e insegura. Que busca entender su lugar en el mundo.
+      </p>
+    </div>
+  </div>
+</div>
+
+      
+      <!-- Zach -->
+      <div class="col">
+        <div class="card personaje-card h-100">
+          <img src="Resources/Personajes/Zach Reynolds.jpeg" class="card-img-top" alt="Zach Reynolds" />
+          <div class="card-body">
+            <h5 class="card-title">Zach Reynolds</h5>
+            <p class="card-text">
+              Tu Gymbro de desconfianza.
+            </p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Sean -->
+      <div class="col">
+        <div class="card personaje-card h-100">
+          <img src="Resources/Personajes/Sean Coodlyswood.jpeg" class="card-img-top" alt="Sean Coodlyswood" />
+          <div class="card-body">
+            <h5 class="card-title">Sean Coodlyswood</h5>
+            <p class="card-text">
+              Hijo de politico, geek de nacimiento.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lauren -->
+      <div class="col">
+        <div class="card personaje-card h-100">
+          <img src="Resources/Personajes/Lauren Miller.jpeg" class="card-img-top" alt="Lauren Miller" />
+          <div class="card-body">
+            <h5 class="card-title">Lauren Miller</h5>
+            <p class="card-text">
+              Radiante, inteligente y admirada. Gemela popular.
+            </p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Sophia -->
+      <div class="col">
+        <div class="card personaje-card h-100">
+          <img src="Resources/Personajes/Sophia Porter.jpeg" class="card-img-top" alt="Sophia Porter" />
+          <div class="card-body">
+            <h5 class="card-title">Sophia Porter</h5>
+            <p class="card-text">
+              Introvertida y extraña. Combinacion mortal.
+            </p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Burt -->
+      <div class="col">
+        <div class="card personaje-card h-100">
+          <img src="Resources/Personajes/Burt Henderson.jpeg" class="card-img-top" alt="Burt Henderson" />
+          <div class="card-body">
+            <h5 class="card-title">Burt Henderson</h5>
+            <p class="card-text">
+              Competitivo y antipatico. Pesadilla de Joel, repudio de Jenna.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tara -->
+      <div class="col">
+        <div class="card personaje-card h-100">
+          <img src="Resources/Personajes/Tara Page.jpeg" class="card-img-top" alt="Tara Page" />
+          <div class="card-body">
+            <h5 class="card-title">Tara Page</h5>
+            <p class="card-text">
+              Extrovertida y tranquila. Combinacion unica.
+            </p>
+          </div>
+        </div>
+      </div>
+    
+    </div>
+  <footer>
+    &copy; 2025 It´s Saturday Universe - Jesús Alejandro Aguilar Sánchez
+  </footer>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Script para cargar navbar -->
+  <script>
+    fetch('navbar.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('navbar-placeholder').innerHTML = data;
+      })
+      .catch(err => console.error('Error cargando navbar:', err));
+  </script>
+</body>
+</html>
