@@ -632,11 +632,8 @@ button.btn-outline-light:hover {
   object-fit: cover;   /* Para que no se deformen */
 }
 
-/* =========================================
-   Cursor personalizado global: JennaMouse
-   ========================================= */
-html, body, * {
-  cursor: url('/Resources/JennaMouse.png') 16 16, auto !important;
+html, body {
+  cursor: url("../Resources/JennaMouse.cur"), auto !important;
 }
 
 
