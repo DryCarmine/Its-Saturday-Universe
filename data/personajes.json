@@ -1,0 +1,59 @@
+[
+  {
+    "id": "jenna",
+    "nombre": "Jenna Miller",
+    "descripcion": "Punk apasionada, difícil de comprender y aún más de soportar. Gemela rebelde.",
+    "png": "Resources/Personajes/Jenna Miller.png",
+    "gif": "Resources/Personajes/JennaGif.gif"
+  },
+  {
+    "id": "joel",
+    "nombre": "Joel Friderovski",
+    "descripcion": "De naturaleza amable, leal, torpe e insegura. Que busca entender su lugar en el mundo.",
+    "png": "Resources/Personajes/Joel Friderovski.png",
+    "gif": "Resources/Personajes/JoelGif.gif"
+  },
+  {
+    "id": "zach",
+    "nombre": "Zach Reynolds",
+    "descripcion": "Tu Gymbro de desconfianza.",
+    "png": "Resources/Personajes/Zach Reynolds.jpeg",
+    "gif": "Resources/Personajes/Zach Reynolds.jpeg"
+  },
+  {
+    "id": "sean",
+    "nombre": "Sean Coodlyswood",
+    "descripcion": "Hijo de político, geek de nacimiento.",
+    "png": "Resources/Personajes/Sean Coodlyswood.jpeg",
+    "gif": "Resources/Personajes/Sean Coodlyswood.jpeg"
+  },
+  {
+    "id": "lauren",
+    "nombre": "Lauren Miller",
+    "descripcion": "Radiante, inteligente y admirada. Gemela popular.",
+    "png": "Resources/Personajes/Lauren Miller.jpeg",
+    "gif": "Resources/Personajes/Lauren Miller.jpeg"
+  },
+  {
+    "id": "sophia",
+    "nombre": "Sophia Porter",
+    "descripcion": "Introvertida y extraña. Combinación mortal.",
+    "png": "Resources/Personajes/Sophia Porter.jpeg",
+    "gif": "Resources/Personajes/Sophia Porter.jpeg"
+  },
+  {
+    "id": "burt",
+    "nombre": "Burt Henderson",
+    "descripcion": "Competitivo y antipático. Pesadilla de Joel, repudio de Jenna.",
+    "png": "Resources/Personajes/Burt Henderson.jpeg",
+    "gif": "Resources/Personajes/Burt Henderson.jpeg"
+  },
+  {
+    "id": "tara",
+    "nombre": "Tara Page",
+    "descripcion": "Extrovertida y tranquila. Combinación única.",
+    "png": "Resources/Personajes/Tara Page.jpeg",
+    "gif": "Resources/Personajes/Tara Page.jpeg"
+  }
+]
+
