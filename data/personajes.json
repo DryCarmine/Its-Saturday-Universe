@@ -28,6 +28,13 @@
     "gif": "Resources/Personajes/Sean Coodlyswood.jpeg"
   },
   {
+    "id": "zoey",
+    "nombre": "Zoey Mendez",
+    "descripcion": "Sin presiones, solo tu y mi buena onda.",
+    "png": "Resources/Personajes/Zoey Mendez.png",
+    "gif": "Resources/Personajes/ZoeyGif.gif"
+  },
+  {
     "id": "lauren",
     "nombre": "Lauren Miller",
     "descripcion": "Radiante, inteligente y admirada. Gemela popular.",
