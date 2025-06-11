@@ -2,7 +2,7 @@
    Fondo fijo general en páginas que usen .page-with-background
    ---------------------------------------------------- */
 .page-with-background {
-  background-image: url('../Resources/Fondo.png');
+  background-image: url('../Resources/fondo.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
