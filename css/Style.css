@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
 /* ----------------------------------------------------
    Fondo fijo general en páginas que usen .page-with-background
    ---------------------------------------------------- */
@@ -128,7 +129,7 @@ nav.navbar {
 
 /* Enlace de marca (logo + texto) */
 .navbar-brand span {
-  font-family: 'Orbitron', sans-serif !important;
+  font-family: 'Bangers', cursive !important;
   font-weight: 500 !important;
   font-size: 1.5rem !important;
   letter-spacing: 2px !important;
@@ -145,10 +146,13 @@ nav.navbar {
   line-height: 1.1;         
 }
 
+ h2.lobby-title, .card-title {
+    font-family: 'Bangers', cursive;
+  }
 
 /* Enlaces de la navegación */
 .nav-link {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Bangers', cursive;
   font-weight: 600;
   font-size: 1rem;
   color: #00FFFF !important; /* AQUA */
@@ -200,17 +204,20 @@ nav.navbar {
    ======== FONDOS ESPECÍFICOS PARA CADA CARD =======
    ================================================ */
 
+/* Fondo para tarjeta “Personajes” */
+/* Estilos para la tarjeta de “Capítulos” en el índice */
 .card-bg-personajes {
   position: relative;
-  height: 100%;
-  background-image: url('../Resources/ImgMenu/personajes.png');
+  height: 100%; /* Mantener el tamaño de la tarjeta */
+  background-image: url('../Resources/ImgMenu/personajes.png'); /* Imagen estática */
   background-size: cover;
   background-position: center;
-  overflow: hidden;
+  overflow: hidden; /* Evitar que la imagen se desborde */
 }
 
+/* Imagen que aparece al hacer hover (GIF) en la tarjeta de “Capítulos” */
 .card-bg-personajes:hover {
-  background-image: url('../Resources/ImgMenu/personajes.gif');
+  background-image: url('../Resources/ImgMenu/personajes.gif'); /* GIF al pasar ratón */
   background-size: cover;
   background-position: center;
 }
@@ -276,7 +283,7 @@ footer {
 
 /* Títulos y descripciones de la pantalla principal (“lobby”) */
 .lobby-title {
-  font-family: 'Orbitron', sans-serif;
+  font-family: 'Bangers', cursive;
   font-weight: 500;
   font-size: 2.2rem;
   letter-spacing: 2px;
@@ -435,7 +442,7 @@ footer {
    ======== TÍTULO DE LA PÁGINA “Capítulo” ============
    =================================================== */
 .capitulo-title {
-  font-family: 'Orbitron', sans-serif;
+  font-family: 'Bangers', cursive;
   font-weight: 700;
   font-size: 2.5rem;            
   color: #00FFFF;                /* AQUA */
@@ -458,7 +465,7 @@ footer {
   border: 2px solid #1abc9c;            /* borde aqua */
   border-radius: 50px;                  /* esquinas muy redondeadas */
   padding: 0.6rem 1.8rem;               /* un poco más de padding horizontal */
-  font-family: 'Poppins', sans-serif;   /* misma familia moderna que nav */
+  font-family: 'Bangers', cursive;   
   font-weight: 600;
   text-transform: uppercase;            /* opcional: texto en mayúsculas */
   letter-spacing: 1px;
@@ -647,7 +654,7 @@ html, body {
 .card,
 .personaje-card,
 .capitulo-card {
-  border: 5px solid #000;
+  border: 4px solid #000;
 }
 
 
