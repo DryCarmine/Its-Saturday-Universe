@@ -200,9 +200,17 @@ nav.navbar {
    ======== FONDOS ESPECÍFICOS PARA CADA CARD =======
    ================================================ */
 
-/* Fondo para tarjeta “Personajes” */
 .card-bg-personajes {
-  background-image: url('../Resources/Decor/personajes-bg.jpg');
+  position: relative;
+  height: 100%;
+  background-image: url('../Resources/ImgMenu/personajes.png');
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.card-bg-personajes:hover {
+  background-image: url('../Resources/ImgMenu/personajes.gif');
   background-size: cover;
   background-position: center;
 }
@@ -634,6 +642,12 @@ button.btn-outline-light:hover {
 
 html, body {
   cursor: url("../Resources/JennaMouse.cur"), auto !important;
+}
+
+.card,
+.personaje-card,
+.capitulo-card {
+  border: 5px solid #000;
 }
 
 
