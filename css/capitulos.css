@@ -1,0 +1,34 @@
+.capitulo-card {
+  cursor: pointer;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: rgba(39, 4, 4, 0.85);
+  color: #00FFFF;
+}
+
+.capitulo-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.8);
+}
+
+.capitulo-card .card-img-top {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  object-fit: cover;
+  height: 180px;
+}
+
+.capitulo-card .card-title {
+  color: #00FFFF;
+  font-weight: 700;
+  text-shadow:
+    0 0 6px #00FFFF,
+    0 0 10px #00aaab;
+}
+
+.capitulo-card .card-text {
+  color: #66FFFF;
+  font-style: italic;
+  font-weight: 500;
+}

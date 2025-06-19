@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+.page-with-background {
+  background-image: url('../Resources/fondo.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+main.container {
+  position: relative;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 12px;
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 3rem auto;
+}
+
+/* NAVBAR */
+.navbar-brand img {
+  height: 40px;
+  width: auto;
+  margin-right: 10px;
+}
+
+.navbar-title {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;      
+  letter-spacing: 2px;
+  color: #00FFFF;         
+  text-shadow: 0 0 5px #00FFFF;
+  user-select: none;
+  margin: 0;             
+}
+
+nav.navbar {
+  background-color: rgba(0, 0, 0, 0.85) !important;
+  backdrop-filter: saturate(180%) blur(10px);
+  transition: background-color 0.3s ease;
+  z-index: 10;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.navbar-brand span {
+  font-family: 'Bangers', cursive !important;
+  font-weight: 500 !important;
+  font-size: 1.5rem !important;
+  letter-spacing: 2px !important;
+  color: #00FFFF !important; 
+  user-select: none !important;
+  text-shadow:
+    0 0 5px #00FFFF,
+    0 0 10px #00FFFF,
+    0 0 20px #00aaaa,
+    0 0 30px #008888 !important;
+  display: inline-block;
+  white-space: normal;       
+  max-width: 200px;         
+  line-height: 1.1;         
+}
+
+ h2.lobby-title, .card-title {
+    font-family: 'Bangers', cursive;
+  }
+
+.nav-link {
+  font-family: 'Bangers', cursive;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #00FFFF !important;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #ffffff !important;
+}
+footer {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #00FFFF;
+  padding: 1rem 0;
+  text-align: center;
+  user-select: none;
+  margin-top: 3rem;
+}
+
+/* Títulos y descripciones*/
+.core-title {
+  font-family: 'Bangers', cursive;
+  font-weight: 700;
+  font-size: 2.5rem;            
+  color: #00FFFF;               
+  text-shadow:
+    0 0 8px #00FFFF,
+    0 0 12px #00aaab;
+  letter-spacing: 1px;
+  user-select: none;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.core-description {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #66FFFF; 
+}
+.card-title {
+  color: #00FFFF;
+  font-weight: 700;
+  text-shadow:
+    0 0 6px #00FFFF,
+    0 0 10px #00aaab;
+}
+.card-text {
+  color: #66FFFF;
+  font-style: italic;
+  font-weight: 500;
+}
+.card{
+  border: 5px solid #000;
+}
+
+/*OPTIMIZACION PARA MÓVILES*/
+@media (max-width: 991px) {
+  .navbar-brand span {
+    font-size: 1.3rem !important;   
+    letter-spacing: 1.5px !important;
+    max-width: 180px;             
+  }
+  .nav-link {
+    font-size: 0.95rem;
+  }
+}
+@media (max-width: 767px) {
+  .navbar-brand span {
+    font-size: 1.1rem !important;   
+    letter-spacing: 1px !important;
+    max-width: 140px;           
+    line-height: 1.2;       
+  }
+  .nav-link {
+    font-size: 0.9rem !important;
+  }
+  nav.navbar {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  .navbar-brand img {
+    max-height: 30px;
+    margin-right: 5px;
+  }
+  .navbar-toggler {
+    margin-left: auto;
+  }
+}
+@media (max-width: 575px) {
+  .navbar-brand span {
+    font-size: 1rem !important;  
+    letter-spacing: 0.8px !important;
+    max-width: 100px;           
+    line-height: 1.2;
+  }
+  .nav-link {
+    font-size: 0.85rem !important;
+  }
+}
+@media (max-width: 576px) {
+  /* Ajusta la barra de búsqueda en móviles pequeños */
+  .search-container {
+    width: 180px;
+  }
+
+  .search-input {
+    font-size: 0.9rem; /* Texto más pequeño en móviles */
+  }
+
+  /* Ajuste del tamaño y padding del botón de búsqueda */
+  button.btn-outline-light {
+    padding: 0.3rem 1rem;
+    font-size: 0.9rem;
+  }
+}
+html, body {
+  cursor: url("../Resources/JennaMouse.cur"), auto !important;
+}

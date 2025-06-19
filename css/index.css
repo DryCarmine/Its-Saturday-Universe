@@ -1,0 +1,122 @@
+.scroll-background {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 200vh;
+  overflow: hidden;
+  z-index: -2;
+
+  background-image: url('../Resources/PersonajesFP.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  filter: blur(40px) brightness(0.4);
+  transform: scale(1.1);
+}
+.scroll-container {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 200vh;
+  overflow: hidden;
+  z-index: -1;
+
+  animation: scrollLoop 40s linear infinite;
+}
+.scroll-image {
+  background-image: url('../Resources/PersonajesFP.png');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: contain;
+
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+.scroll-image:nth-child(2) {
+  position: absolute;
+  top: 100vh;
+  left: 0;
+}
+@keyframes scrollLoop {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+/* Tarjetas */
+.card {
+  position: relative;
+  color: white;
+  cursor: pointer;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 12px rgba(0,0,0,0.6);
+  transition: transform 0.3s ease;
+}
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.8);
+}
+.card .card-img-top {
+  transition: transform 0.3s ease;
+}
+.card:hover .card-img-top {
+  transform: scale(1.05);
+}
+.overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.2);
+  pointer-events: none;
+  z-index: 1;
+}
+.card-bg-personajes {
+  position: relative;
+  height: 100%;
+  background-image: url('../Resources/ImgMenu/personajes.webp');
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+.card-bg-personajes:hover {
+  background-image: url('../Resources/ImgMenu/personajes.gif');
+  background-size: cover;
+  background-position: center;
+}
+.card-bg-coodlyswood {
+  background-image: url('../Resources/Decor/coodlyswood-bg.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.card-bg-historia {
+  background-image: url('../Resources/Decor/historia-bg.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.card-bg-antologias {
+  background-image: url('../Resources/ImgMenu/ALPT.webp');
+  background-size: cover;
+  background-position: center;
+}
+.card-bg-capitulos {
+  position: relative;
+  height: 100%;
+  background-image: url('../Resources/ImgMenu/CapitulosS.webp');
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+.card-bg-capitulos:hover {
+  background-image: url('../Resources/ImgMenu/CapitulosA.gif');
+  background-size: cover;
+  background-position: center;
+}
+.card-body {
+  position: relative;
+  z-index: 1;
+}

@@ -1,0 +1,54 @@
+.btn-return {
+  display: inline-block;
+  font-family: 'Bangers', cursive;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: none;               /* Texto normal, no uppercase */
+  letter-spacing: 0.5px;             /* Espaciado ligero */
+
+  padding: 0.65rem 2rem;             /* Ajuste de padding */
+  border: none;                      /* Sin borde para un look más limpio */
+  border-radius: 40px;               /* Muy redondeado */
+
+  /* Degradado suave */
+  background: linear-gradient(
+    135deg,
+    rgba(26, 188, 156, 0.8),
+    rgba(22, 160, 133, 0.9)
+  );
+
+  color: #ffffff !important;            /* Texto blanco */
+  
+  /* Sombra externa e interna */
+  box-shadow:
+    0 4px 8px rgba(0,0,0,0.2),
+    inset 0 -2px 4px rgba(0,0,0,0.1);
+  
+  transition:
+    background 0.4s ease,
+    transform 0.2s ease,
+    box-shadow 0.4s ease;
+  cursor: pointer;
+  margin-top: 1.5rem;
+}
+
+.btn-return:hover {
+  /* Invertimos el degradado y elevamos */
+  background: linear-gradient(
+    135deg,
+    rgba(85, 8, 12, 0.9),
+    rgba(185, 12, 12, 0.8)
+  );
+  transform: translateY(-2px);
+  box-shadow:
+    0 8px 16px rgba(0,0,0,0.3),
+    inset 0 -2px 6px rgba(0,0,0,0.15);
+}
+
+.btn-return:active {
+  /* Pequeña presión */
+  transform: translateY(0);
+  box-shadow:
+    0 2px 4px rgba(0,0,0,0.2),
+    inset 0 2px 4px rgba(0,0,0,0.1);
+}
