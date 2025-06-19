@@ -1,11 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
-body {
-  background-image: url('../Resources/Fondo.png');
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  color: #f0f0f0;
-}
 
 /* Breadcrumb */
 .breadcrumb-custom {
