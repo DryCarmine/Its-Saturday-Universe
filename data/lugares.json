@@ -1,0 +1,10 @@
+[
+  {
+    "id": "cafearmstrong",
+    "nombre": "Café Armstrong",
+    "icon": "Resources/Coodlyswood/CafeA.png",
+    "coords": { "x": 33, "y": 67 },
+    "size": { "width": 70, "height": 70 },
+    "link": "cafearmstrong.html"
+  }
+]

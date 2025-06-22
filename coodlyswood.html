@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>It´s Saturday - Capítulos</title>
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="css/core.css" />
+  <link rel="stylesheet" href="css/coodlyswood.css" />
+</head>
+<body>
+  <body class="page-with-background">
+  <div id="navbar-placeholder"></div>
+
+    <main class="container py-5">
+     <h2 class="text-center mb-4 core-title">Mapa de Coodlyswood</h2>
+     <p class="text-center mb-5 core-description">Haz clic en los iconos para explorar cada lugar.</p>
+      <div class="map-container position-relative">
+    
+      <img
+        src="Resources/Coodlyswood/Coodlyswood.webp"
+        alt="Mapa de Coodlyswood"
+        class="img-fluid map-image"
+      />
+     <div id="hotspots"></div>
+    </div>
+    </main>
+
+  <footer>
+    &copy; 2025 It´s Saturday Universe - Jesús Alejandro Aguilar Sánchez
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <script>
+  fetch('data/lugares.json')
+    .then(res => res.json())
+    .then(lugares => {
+      const cont = document.getElementById('hotspots');
+      lugares.forEach(l => {
+        const a = document.createElement('a');
+        a.href      = l.link;
+        a.title     = l.nombre;
+        a.className = 'map-marker';
+        a.style.left = l.coords.x + '%';
+        a.style.top  = l.coords.y + '%';
+        const img = document.createElement('img');
+        img.src = l.icon;
+        img.alt = l.nombre;
+        if (l.size) {
+          img.style.width  = l.size.width  + 'px';
+          img.style.height = l.size.height + 'px';
+        }
+
+        a.appendChild(img);
+        cont.appendChild(a);
+      });
+    })
+    .catch(err => console.error(err));
+</script>
+
+
+  <script>
+    fetch('navbar.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('navbar-placeholder').innerHTML = data;
+      })
+      .catch(err => console.error('Error cargando navbar:', err));
+  </script>
+</body>
+</html>
